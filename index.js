@@ -20,12 +20,12 @@ const express = require("express");
 const app = express();
 
 // 2. MIDDLEWARES
-//
+require("dotenv").config() // Activar variables de entorno
 
 // 3. RUTAS
 app.use("/", require("./routes/index.routes"));
 
 // 4. SERVIDOR
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log(`It's alive`);
 })
