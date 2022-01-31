@@ -20,7 +20,7 @@ const express = require("express");
 const app = express();
 
 // 2. MIDDLEWARES
-
+//
 
 // 3. RUTAS
 app.use("/", require("./routes/index.routes"));
