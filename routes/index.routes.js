@@ -10,6 +10,10 @@ router.get("/", (req, res) => {
 
 router.get("/contacto", (req, res) => {
     res.send("Contacto")
+});
+
+router.get("/prueba", (req, res) => {
+    res.send("This is a test!")
 })
 
 // 3. EXPORTACIONES
