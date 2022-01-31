@@ -22,6 +22,17 @@ const app = express();
 // 2. MIDDLEWARES
 require("dotenv").config() // Activar variables de entorno
 
+app.use(express.static('public')); // Activa la carpeta pública del proyecto
+
+// Establecer vistas
+// Local: __dirname vale http://localhost:PORT
+// Remoto: __dirname vale https://leonardo-ih-04-backend.herokuapp.com
+app.set("views", __dirname + "/views")
+
+// Indicar que motor de template vamos a usar
+// Handlebars - es un motor que permite manejar lógica dentro de archivos HTML
+app.set("view engine", "hbs")
+
 // 3. RUTAS
 app.use("/", require("./routes/index.routes"));
 

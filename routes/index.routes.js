@@ -14,6 +14,10 @@ router.get("/contacto", (req, res) => {
 
 router.get("/prueba", (req, res) => {
     res.send("This is a test!")
+});
+
+router.get("/117", (req, res) => {
+    res.render("index")
 })
 
 // 3. EXPORTACIONES
