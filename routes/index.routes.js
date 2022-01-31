@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
     res.send("Hola Mundo");
 });
 
-router.get("/contacto", () => {
+router.get("/contacto", (req, res) => {
     res.send("Contacto")
 })
 
